@@ -1,0 +1,70 @@
+.tg-checkbox-wrapper{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    display: inline-block;
+    line-height: unset;
+    cursor: pointer;
+}
+.tg-checkbox-wrapper-checked{
+
+}
+.tg-checkbox-inner{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 16px; 
+    height: 16px; 
+    direction: ltr;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    border-collapse: separate;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.tg-checkbox{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.65);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    -webkit-font-feature-settings: 'tnum';
+    font-feature-settings: 'tnum';
+    position: relative;
+    top: -.09em;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: none;
+    cursor: pointer;
+}
+.tg-checkbox-checked{
+
+}
+.tg-checkbox-input{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    // opacity: 0;
+    height: 16px;
+    width: 16px
+}

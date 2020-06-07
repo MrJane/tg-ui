@@ -1,0 +1,54 @@
+.mine-switch {
+  * {
+    box-sizing: border-box
+  }
+
+  display: inline-block;
+  box-sizing: border-box;
+  width: 44px;
+  height: 22px;
+  line-height: 20px;
+  border-radius: 22px;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all .2s ease-in-out;
+
+  &.mine-switch-checked {
+    border-color: #2db7f5;
+    background-color: #2db7f5;
+
+    .mine-switch-inner {
+    }
+
+    &:after {
+      left: 23px;
+    }
+  }
+
+  .mine-switch-inner {
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    left: 23px;
+  }
+
+  &:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: #fff;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    cursor: pointer;
+    transition: left .2s ease-in-out, width .2s ease-in-out;
+  }
+}
